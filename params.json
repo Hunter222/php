@@ -1,6 +1,6 @@
 {
   "name": "apache在wamp中创建虚拟主机",
   "tagline": "php环境配置",
-  "body": "在APACHE中配置虚拟主机来运行代码：\r\na.修改hosts文件\r\n\r\n\r\nb. 修改apache添加虚拟主机：\r\n\r\n现在重装启APCHE这后就可以在浏览器中访问：www.34.com",
+  "body": "# php",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
