@@ -1,63 +1,105 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>apache在wamp中创建虚拟主机 by Hunter222</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">apache在wamp中创建虚拟主机</h1>
+      <h2 class="project-tagline">php环境配置</h2>
+      <a href="https://github.com/Hunter222/php" class="btn">View on GitHub</a>
+      <a href="https://github.com/Hunter222/php/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Hunter222/php/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/github-dark.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+    <section class="main-content">
+      <h1>
+<a id="1我现在用的是wampserver20i版本" class="anchor" href="#1%E6%88%91%E7%8E%B0%E5%9C%A8%E7%94%A8%E7%9A%84%E6%98%AFwampserver20i%E7%89%88%E6%9C%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.我现在用的是WampServer2.0i版本</h1>
 
-  <title>apache在wamp中创建虚拟主机</title>
-  <meta name="description" content="php环境配置">
+<p>在“httpd.conf”文件中查找：Include conf/extra/httpd-vhosts.conf，去掉前面的注释#。
+如果安装在D盘那就是D:\wamp\bin\apache\apache2.2.8\conf\extra\httpd-vhosts.conf
+用记事本打开  </p>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<h1>
+<a id="2打开在cwindowssystem32driversetc中的hosts文件中加上你要的域名例如" class="anchor" href="#2%E6%89%93%E5%BC%80%E5%9C%A8cwindowssystem32driversetc%E4%B8%AD%E7%9A%84hosts%E6%96%87%E4%BB%B6%E4%B8%AD%E5%8A%A0%E4%B8%8A%E4%BD%A0%E8%A6%81%E7%9A%84%E5%9F%9F%E5%90%8D%E4%BE%8B%E5%A6%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.打开在C:\WINDOWS\system32\drivers\etc中的hosts文件中加上你要的域名,例如：</h1>
 
-</head>
+<pre><code>127.0.0.1    www.haha.com
+</code></pre>
 
-<body>
+<h1>
+<a id="3修改httpdconf文件在文件内容的最下面加上如下--下面的内容是两个虚拟主机的配置" class="anchor" href="#3%E4%BF%AE%E6%94%B9httpdconf%E6%96%87%E4%BB%B6%E5%9C%A8%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%80%E4%B8%8B%E9%9D%A2%E5%8A%A0%E4%B8%8A%E5%A6%82%E4%B8%8B--%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%98%AF%E4%B8%A4%E4%B8%AA%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E7%9A%84%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.修改httpd.conf文件：在文件内容的最下面加上如下  (下面的内容是两个虚拟主机的配置)</h1>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">apache在wamp中创建虚拟主机</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">php环境配置</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/Hunter222/php/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/Hunter222/php/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/Hunter222/php" class="code">View apache在wamp中创建虚拟主机 on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h1>
-<a id="phphahah" class="anchor" href="#phphahah" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>phphahah</h1>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/Hunter222" class="avatar"><img src="https://avatars1.githubusercontent.com/u/8891450?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/Hunter222">Hunter222</a> maintains <a href="https://github.com/Hunter222/php">apache在wamp中创建虚拟主机</a></p>
+<p>NameVirtualHost *:80
 
+    ServerAdmin <a href="mailto:riathinker@gmail.com">riathinker@gmail.com</a><br>
+    DocumentRoot d:/wamp/www/demo/
+    ServerName <a href="http://www.haha.com">www.haha.com</a>
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/Hunter222/php/tarball/master" class="tar">tar</a><a href="https://github.com/Hunter222/php/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+Options FollowSymLinks
+AllowOverride None
+Order allow,deny
+Allow from all
+
+</p>
+
+<p>说明:
+ServerAdmin    <a href="mailto:riathinker@gmail.com">riathinker@gmail.com</a>  //管理员的邮箱
+DocumentRoot d:/wamp/www/demo/       //网站目录
+ServerName  demo.com//域名
+                //目录的权限
+Options FollowSymLinks
+AllowOverride None
+Order allow,deny
+Allow from all
+
+</p>
+
+<p>也可以用里面自带的demo</p>
+
+<p>
+    ServerAdmin <a href="mailto:riathinker@gmail.com">riathinker@gmail.com</a>
+    DocumentRoot "c:/wamp/www/demo"
+    ServerName demo.com
+    ServerAlias <a href="http://www.demo.com/">http://www.demo.com/</a>
+    ErrorLog "logs/dummy-host.localhost-error.log"
+    CustomLog "logs/dummy-host.localhost-access.log" common
+</p>
+
+<p>另外还有一种比较简单的方法，就是想httpd.conf里最下端直接添加</p>
+
+<p>NameVirtualHost 127.0.0.1</p>
+
+<p>
+    ServerAdmin <a href="mailto:riathinker@gmail.com">riathinker@gmail.com</a>
+    DocumentRoot c:/wamp/www/demo
+    ServerName localhost
+</p>
+
+<p>
+    ServerAdmin <a href="mailto:riathinker@gmail.com">riathinker@gmail.com</a>
+    DocumentRoot c:/wamp/www/demo
+    ServerName demo.com
+    
+      AllowOverride all
+      Order Allow,Deny
+      Allow from 127.0.0.1
+    
+</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Hunter222/php">apache在wamp中创建虚拟主机</a> is maintained by <a href="https://github.com/Hunter222">Hunter222</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
 
   
-</body>
+  </body>
 </html>
